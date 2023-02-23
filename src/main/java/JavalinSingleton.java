@@ -19,6 +19,11 @@ public class JavalinSingleton {
         
         //write endpoint here
 
+        app.get("/hello", response -> { 
+            response.result("Hello World");
+        });
+      
+
         return app;
     }
     
